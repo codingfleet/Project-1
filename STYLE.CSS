@@ -1,0 +1,180 @@
+/* CSS Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* body{
+    height: 140rem;
+} */
+
+/* CSS variables */
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+/* Navigation bar: logo and image */
+#logo {
+    margin: 3px 90px 3px 0px;
+}
+
+#logo img {
+    height: 2.8rem;
+    margin: 3px 6px;
+}
+
+/* Navigation bar: menu styling */
+#navbar .menu {
+    display: flex;
+    margin-left: 8rem;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#navbar .menu li{
+    list-style: none;
+    font-size: 0.9rem;
+}
+
+#navbar .menu li a {
+    color: white;
+    padding: 3px 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#navbar .menu li a:hover{
+    color: red;
+}
+
+/* Navigation bar: toolbar styling */
+#navbar .toolbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12rem;
+}
+
+#navbar .toolbar li{
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+#navbar .toolbar li img{
+    height: 4rem;
+    margin-right: 2rem
+}
+
+/* ad container section */
+#ad-container img{
+    width: 100%;
+}
+
+/* product container section (using flexbox)*/
+
+#products-container h2{
+    line-height: 6rem;
+}
+
+#products-container .products{
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+#products-container .products .box{
+    /* border: 2px solid red; */
+    margin: 40px;
+}
+
+#products-container .products .box:hover{
+    transform: scale(1.1);
+    color: red;
+    text-decoration: underline;
+    transition: color 1s ease-in-out;
+    cursor: pointer;
+}
+
+/* About container section (using grid) */
+#about-container{
+    border: 2px solid black;
+    width: 100%;
+}
+#about-container h2{
+    line-height: 6rem;
+}
+#about-container .about-content{
+    border: 3px solid red;
+    margin: 0px 34px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 2rem;
+}
+#about-container .about-content .box{
+    overflow: hidden;
+}
+#about-container .about-content .box h3{
+    color: white;
+    position: relative;
+    top: 450px;
+    z-index: 4;
+}
+#about-container .about-content .box img{
+    z-index: 3;
+    height: 480px;
+}
+#about-container .about-content .box img:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
+
+/* CSS utility */
+.h-primary {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 3.2  rem;
+    padding: 10px;
+}
+
+.h-secondary{
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.2rem;
+    padding: 10px; 
+}
+
+.h-tertiary{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.center {
+    text-align: center;
+}
+
+/* .btn {} */
